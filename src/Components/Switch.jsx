@@ -1,16 +1,15 @@
+import React from "react";
+import "./style.css";
 
-import React from "react"
-import './style.css'
+const Switch = ({ isToggled, onToggle }) => {
+  return (
+    <>
+      <label className="switch">
+        <input type="checkbox" checked={isToggled} onChange={onToggle} />
+        <span className="slider"></span>
+      </label>
+    </>
+  );
+};
 
-const Switch = () => {
-return (
-  <>
-  <label className="switch">
-    <input type="checkbox"/>
-    <span className="slider"></span>
-  </label>
-  </>
-)
-}
-
-export default Switch
+export default Switch;
