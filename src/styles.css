@@ -1,4 +1,13 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  height: 50vh;
+}
+
+#light {
+  background-color: #fbe9e7;
+}
+
+#dark {
+  background-color: #37474f;
 }

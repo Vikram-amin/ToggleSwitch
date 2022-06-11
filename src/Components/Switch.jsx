@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-const Switch = ({ isToggled, onToggle }) => {
+const Switch = ({ onCheck, onchangeSwitch }) => {
   return (
     <>
       <label className="switch">
-        <input type="checkbox" checked={isToggled} onChange={onToggle} />
+        <input type="checkbox" checked={onCheck} onChange={onchangeSwitch} />
         <span className="slider"></span>
       </label>
     </>
